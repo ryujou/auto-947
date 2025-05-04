@@ -7,22 +7,25 @@
 ## 🚀 使用方法
 
 ### 1. 克隆仓库并进入目录
+```bash
    git clone https://github.com/ryujou/auto-947.git
-   cd face-swap-api
-
+   cd auto-947
+```
 ### 2. 创建并激活虚拟环境
+```bash
    python3 -m venv venv
    source venv/bin/activate
-
+```
 ### 3. 安装依赖
+```bash
    pip install -r requirements.txt
-
+```
 ### 4. 准备模型与资源
    - 将 best.pt（YOLOv11 动漫人脸检测模型）放入 static/best.pt
    - 确保以下替换图像在 static/ 目录中：
-     static/947left.png
-     static/947right.png
-     static/947mouth.png
+     - static/947left.png
+     - static/947right.png
+     - static/947mouth.png
 
 ------------------------------------------------------------
 
