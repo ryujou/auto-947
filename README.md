@@ -49,7 +49,8 @@ face-swap-api/
     ├── config.py         # 路径与参数配置
     ├── model.py          # YOLO 加载
     ├── utils.py          # inpaint 与 overlay 函数
-    └── core.py           # 主处理流程 API
+    ├── core.py           # 主处理流程 API
+    └── nonbot-plugin-947.py   # nonebot2插件
 ```
 ------------------------------------------------------------
 
@@ -79,7 +80,7 @@ face-swap-api/
    - POST /swap     上传图片并返回处理后结果，参数：file=图片文件, conf=置信度
    - GET  /health   检查服务状态
 
-### 测试接口：
+#### 测试接口：
 
  - 准备一张 input/test.jpg
  - 运行：
@@ -87,6 +88,10 @@ face-swap-api/
    python test_api.py
    ```
  - 默认输出为 output/test_result.jpg
+   
+### 方式三：作为Nonebot2插件接入QQ群
+ - 将nonbot-plugin-947.py放入你nonebot的plugins文件夹下
+ - 发送“鬼图”，之后发送要生成947的图片
 
 ------------------------------------------------------------
 
@@ -105,7 +110,7 @@ face-swap-api/
 
 ## 📌 TODO
 
-- [ ] 接入QQ机器人实现在群聊中自动生成鬼图
+- [x] ~~接入QQ机器人实现在群聊中自动生成鬼图~~
 - [ ] 支持视频输入（逐帧处理 + 拼接）
 
 
