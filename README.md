@@ -91,7 +91,11 @@ face-swap-api/
    
 ### 方式三：作为Nonebot2插件接入QQ群
  - 将nonbot-plugin-947.py放入你nonebot的plugins文件夹下
- - 发送“鬼图”，之后发送要生成947的图片
+ - 启动 FastAPI HTTP API 服务
+   ```bash
+   python server.py
+   ```
+ - 发送指令“鬼图”，之后发送要生成947的图片
 
 ------------------------------------------------------------
 
